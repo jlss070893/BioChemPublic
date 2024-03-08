@@ -1,0 +1,33 @@
+/* .b-example-divider {
+    height: 2rem;
+    background-color: rgba(255, 255, 255);
+    border: solid rgb(255, 255, 255);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, o.15);
+} */
+
+.contenedor-banner {
+    position: relative;
+    width: 100%; /* Ancho de la imagen */
+    height: 100px; /* Altura de la imagen */
+    overflow: hidden; /* Para recortar la imagen */
+  }
+  .imagen-banner {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+  .texto-banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Color de fondo semi-transparente */
+    color: white;
+    padding: 10px;
+    /* text-align: center; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

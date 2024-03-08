@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioChemPeru</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <a href="#" id="whatsappButton" data-toggle="popover" title="Selecciona un número de WhatsApp"
+  class="btn-wtsp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!--NAVBAR-->
+  <header>
+    <div class="nav-top bg-light border-bottom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-10 col-sm-9 col-md-8 text-md-end text-center py-1">
+            <a href="tel:+51995407606" class="text-decoration-none text-secondary pe-3 contact-top">
+              <i class="bi bi-telephone"></i> +51 995 407 606
+            </a>
+            <a href="tel:+51994465804" class="text-decoration-none text-secondary pe-3 contact-top">
+              <i class="bi bi-telephone"></i> +51 994 465 804
+            </a>
+            <a href="mailto:ventas3@biochemperu.com" class="text-decoration-none text-secondary contact-top">
+              <i class="bi bi-envelope"></i> ventas3@biochemperu.com
+            </a>
+          </div>
+          <div class="col-2 col-sm-3 col-md-4 d-flex flex-sm-row justify-content-end">
+            <div class="d-flex flex-column flex-sm-row">
+              <a href="https://www.instagram.com/carebios_peru/" target="_blank" title="Instagram Biochem"
+                class="rounded-circle text-decoration-none social-top mx-1 text-danger">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/CareBiosPeru/" target="_blank" title="Facebook Biochem"
+                class="rounded-circle text-decoration-none social-top mx-1 text-primary">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </div>
+            <!-- <div class="d-flex flex-column flex-sm-row">
+                        <a href="https://www.youtube.com" target="_blank" title="Youtube Biochem"
+                            class="rounded-circle text-decoration-none social-top mx-1 text-danger">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com" target="_blank" title="Tiktok Biochem"
+                            class="rounded-circle text-decoration-none social-top mx-1 text-dark">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container-fluid contain-nav">
+        <div class="container-logo">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/Logo/logo.png" alt="" class="nav-logo">
+          </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toogle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <div class="col-12 nav-menu-search">
+            <div class="search">
+              <button class="button-search bg-transparent">
+                <i class="bi bi-search"></i>
+              </button>
+              <input type="text" class="form-control" placeholder="Busar Productos...">
+            </div>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-auto-close="outside" href="#" id="navbarDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="dropend">
+                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                      href="#">Refrigeradoras Clínicas</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="productos.html">+2°C a +8°C</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="productos.html">+2°C a +15°C</a></li>
+                        <!-- 
+                                <li><a class="dropdown-item" href="productos.html">Producto 3</a></li> -->
+                      </ul>
+                  </li>
+                  <li class="dropend">
+                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                      href="#">Congeladoras Clínicas</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="productos.html">-10°C a -25°C</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="productos.html">-10°C a -30°C</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropend">
+                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                      href="#">Ultra-Congeladora</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="productos.html">-10°C a -40°C</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="productos.html">-40°C a -86°C</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropend">
+                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" role="button" href="#">Banco de
+                      Sangre de Laboratorio</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="productos.html">+/-4°C</a></li>
+                    </ul>
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="nav-item"><a href="#" class="dropdown-item">Cooler Transposervicio de muestras</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-auto-close="outside" href="#" id="navbarDropdown2"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li class="nav-item"><a href="#" class="dropdown-item">Técnico</a></li>
+                  <li class="nav-item"><a href="#" class="dropdown-item">Calibración</a></li>
+                  <li class="nav-item"><a href="#" class="dropdown-item">Calificación</a></li>
+                  <li class="nav-item"><a href="#" class="dropdown-item">Mantenimiento Preventivo</a></li>
+                  <li class="nav-item"><a href="#" class="dropdown-item">Mantenimiento correctivo</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!--carousel-->
+  <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="img/slide/img1.jpg" class="d-block w-100 img-carousel" alt="img1">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="img/slide/img2.jpg" class="d-block w-100 img-carousel" alt="img2">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="img/slide/img3.jpg" class="d-block w-100 img-carousel" alt="img3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--avisos-->
+  <div class="container-fluid">
+    <div class="row bg-primary">
+      <div class="col-sm py-2 d-flex align-items-start text-light info-col">
+        <i class="bi bi-truck px-sm-2 info-icon"></i>
+        <!-- <div class="d-flex  flex-column justify-content-center ms-2"> -->
+        <div class="d-flex flex-column py-2 ms-2">
+          <h6 class="m-0 fs-5">Envios a todo el Perú</h6>
+          <p class="m-0">Seguridad, rapidez y coanfianza</p>
+        </div>
+      </div>
+      <div class="col-sm py-2 d-flex align-items-start text-light info-col">
+        <i class="bi bi-stopwatch px-sm-2 info-icon"></i>
+        <div class="d-flex flex-column py-2 ms-2">
+          <h6 class="m-0 fs-5">Servicio Técnico</h6>
+          <p class="m-0">Servicio Preventivo, Correctivo, Calibracion, Calificacion y más</p>
+        </div>
+      </div>
+      <div class="col-sm py-2 d-flex align-items-start text-light">
+        <i class="bi bi-bag px-sm-2 info-icon"></i>
+        <div class="d-flex flex-column py-2 ms-2">
+          <h6 class="m-0 fs-5">03 años de Garantia</h6>
+          <p class="m-0">Equipos con certificación por el DIGEMID</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Productos-->
+  <div class="container">
+    <div class="d-flex mt-5 px-0 px-sm-3 justify-content-between">
+      <h4 class="title-section">Productos destacados</h4>
+      <a href="#" class="text-decoration-none fw-bold">Ver todos</a>
+    </div>
+    <div class="row">
+      <div class="col-sm mt-3">
+        <div class="card text-center">
+          <div class="card-contain-img">
+            <img src="img/productos_prin/p1.jpg" alt="product_1" class="card-img-top card-img-scale">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Producto 1</h5>
+            <p class="card-text card-description">650 ltrs - x51edfeddf - blanco</p>
+            <!-- <a href="#" class="btn btn-primary">VER MÁS</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm mt-3">
+        <div class="card text-center">
+          <div class="card-contain-img">
+            <img src="img/productos_prin/p2.jpg" alt="product_2" class="card-img-top card-img-scale">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Producto 2</h5>
+            <p class="card-text card-description">650 ltrs - x51edfeddf - blanco</p>
+            <!-- <a href="#" class="btn btn-primary">VER MÁS</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm mt-3">
+        <div class="card text-center">
+          <div class="card-contain-img">
+            <img src="img/productos_prin/p3.jpg" alt="product_3" class="card-img-top card-img-scale">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Producto 3</h5>
+            <p class="card-text card-description">650 ltrs - x51edfeddf - blanco</p>
+            <!-- <a href="" class="btn btn-primary">VER MÁS</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm mt-3">
+        <div class="card text-center">
+          <div class="card-contain-img">
+            <img src="img/productos_prin/p4.jpg" alt="product_4" class="card-img-top card-img-scale">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Producto 4</h5>
+            <p class="card-text card-description">650 ltrs - x51edfeddf - blanco</p>
+            <!-- <a href="#" class="btn btn-primary">VER MÁS</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Categorias-->
+  <div class="container">
+    <div class="d-flex mt-5 px-0 px-sm-3 justify-content-between">
+      <h4 class="title-section">Categorías destacadas</h4>
+      <a href="#" class="text-decoration-none fw-bold">Ver todos</a>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-4">
+        <div class="card card-cate mt-3" style="max-width: 540px;cursor:pointer">
+          <div class="row g-0">
+            <div class="col-5 card-contain-img">
+              <img src="img/categorias_prin/ca1.jpg" class="img-cate rounded-start" alt="...">
+            </div>
+            <div class="col-7">
+              <div class="card-body">
+                <h5 class="card-title">Maquinaria</h5>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <div class="card card-cate mt-3" style="max-width: 540px;cursor:pointer">
+          <div class="row g-0">
+            <div class="col-5 card-contain-img">
+              <img src="img/categorias_prin/ca2.jpg" class="img-cate rounded-start" alt="...">
+            </div>
+            <div class="col-7">
+              <div class="card-body">
+                <h5 class="card-title">Refrigeradoras</h5>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <div class="card card-cate mt-3" style="max-width: 540px;cursor:pointer">
+          <div class="row g-0">
+            <div class="col-5 card-contain-img">
+              <img src="img/categorias_prin/ca3.jpg" class="img-cate rounded-start" alt="...">
+            </div>
+            <div class="col-7">
+              <div class="card-body">
+                <h5 class="card-title">Loncheras</h5>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--footer-->
+  <div class="container-fluid bg-dark">
+    <footer>
+      <div class="row py-5 mt-5 border-top">
+        <div class="col-md-4 ps-4">
+          <a href="#" class="mb-3 link-light text-decoration-none">
+            <img src="img/Logo/logo.png" alt="" width="200">
+          </a>
+          <p class="text-light mt-3 fs-15"><i class="bi bi-geo-alt-fill"></i> Psje de la Marina #120 - 2do Piso Dpto 201
+            -<br>Pueblo Libre - Lima - Peru</p>
+          <p class="text-light fs-15"><i class="bi bi-telephone-fill"></i> 995407606 / 994465804</p>
+          <p class="text-light fs-15"><i class="bi bi-envelope-at-fill"></i> ventas3@biochemperu.com</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 mt-3">
+          <h5 class="text-primary">Sobre la empresa</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-light">Inicio</a></li>
+            <li class="nav-item mb-2"><a href="productos.html" class="nav-link p-0 text-light">Productos</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Servicios</a></li>
+            <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0 text-light">Nosotros</a></li>
+            <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li> -->
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-md-4 mt-3">
+          <h5 class="text-primary">Te ayudamos</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a
+                href="https://api.whatsapp.com/send?phone=51995407606&text=Hola,%20Quisiera%20Saber%20m%C3%A1s%20sobre%20un%20producto%20o%20servicio"
+                target="_blank" class="nav-link p-0 text-light">whatsapp</a></li>
+            <li class="nav-item mb-2"><a href="tel:+51995407606" class="nav-link p-0 text-light">Contacto</a></li>
+            <li class="nav-item mb-2"><a href="mailto:ventas3@biochemperu.com" class="nav-link p-0 text-light">Email</a>
+            </li>
+            <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li> -->
+          </ul>
+        </div>
+
+        <!-- <div class="col-md-4 mt-3"> 
+          <h5 class="text-primary">Metodos de pago</h5>
+          <img src="img/footer/Metodos-de-pago-incredible-peru-travel.png" alt="" width="200" class="mx-auto">
+        </div> -->
+      </div>
+      <div class="row">
+        <div class="col-12 border-top text-center text-light">
+          <p class="mt-2">Copyright © 2024 Biochem Perú todo los derechos reservados. <a
+              href="mailto:jlss070893@gmail.com">Realizado por jlss070893</a></p>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#whatsappButton').popover({
+        content: function () {
+          return $('#popover-content').html();
+        },
+        html: true,
+        trigger: 'focus'
+      });
+    });
+
+    function redirectToWhatsApp(phoneNumber) {
+      var message = "Hola, Quisiera saber más sobre un producto o servicio";
+      var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
+      window.open(url, "_blank");
+    }
+
+  </script>
+
+  <div id="popover-content" style="display: none;">
+    <a href="https://api.whatsapp.com/send?phone=51995407606&text=Hola,%20Quisiera%20Saber%20m%C3%A1s%20sobre%20un%20producto%20o%20servicio" class="d-block w-100 mb-2 btn btn-success" target="_blank"><i class="bi bi-whatsapp"></i> +51 995407606</a>
+    <a href="https://api.whatsapp.com/send?phone=51968189344&text=Hola,%20Quisiera%20Saber%20m%C3%A1s%20sobre%20un%20producto%20o%20servicio" class="d-block w-100 btn btn-success" target="_blank"><i class="bi bi-whatsapp"></i> +51 968189344</a>
+  </div>
+</body>
+
+</html>

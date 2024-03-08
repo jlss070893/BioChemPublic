@@ -1,0 +1,70 @@
+/* .b-example-divider {
+    height: 2rem;
+    background-color: rgba(255, 255, 255);
+    border: solid rgb(255, 255, 255);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, o.15);
+} */
+
+/* .page-link {
+    background-color: #fff !important;
+    color: #000 !important;
+
+} */
+
+.page-link:hover {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+
+/* Modal productos */
+
+.contenido .img_contenido {
+  width: 350px;
+  height: 350px;
+  margin-bottom: 20px;
+}
+
+.contenido .img_contenido .main_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+  /* object-fit: cover; */
+}
+
+.contenido .thumbnail_contenido {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenido .thumbnail_contenido .thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* object-fit: cover; */
+    opacity: .7;
+    transition: .3s;
+}
+
+.contenido .thumbnail_contenido .thumbnail:hover {
+    opacity: 1;
+}
+
+.t_active {
+    opacity: 1 !important;
+    box-shadow: 0 5px 5px rgba(1, 23, 46 0.6);
+}
+
+@media (min-width: 768px) {
+  .offcanvas {
+    display: none !important;
+  }
+
+  .offcanvas-backdrop {
+    display: none;
+    opacity: 0 !important;
+  }
+}

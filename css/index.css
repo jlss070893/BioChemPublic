@@ -1,6 +1,6 @@
 /* CAROUSEL */
 .img-carousel {
-  height: 400px !important;
+  height: 300px;
 }
 
 /* END CAROUSEL */
@@ -58,8 +58,23 @@
   .info-col {
     border-bottom: 1px solid #f0f0f0;
   }
-
-  /* .title-section {
-    font-size: 1rem;
-  } */
 }
+
+@media (min-width: 992px) {
+    .img-carousel {
+      height: 422px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .img-carousel {
+      height: 522px;
+  }
+}
+
+@media (min-width: 1920px) {
+    .img-carousel {
+      height: 622px;
+  }
+}
+
